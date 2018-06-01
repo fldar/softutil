@@ -4,7 +4,18 @@
 
 @section('conteudo')
 
+
 <div class="container home table-link">
+
+@if ($errors->any())
+  <div class="row alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+  </div>
+@endif
 
   <div class="row justify-content-md-center">
     <h3>Links</h3>

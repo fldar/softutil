@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Util;
 use Illuminate\Http\Request;
+use App\Http\Requests\UtilRequest;
 
 class UtilController extends Controller
 {
@@ -22,7 +23,7 @@ class UtilController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function salvar(Request $req){
+     public function salvar(UtilRequest $req){
         $dados = $req->all();
         Util::create($dados);
         return redirect()->route('links');

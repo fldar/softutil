@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Util;
 use App\Link;
 use Illuminate\Http\Request;
+use App\Http\Requests\LinkRequest;
 
 class LinkController extends Controller
 {
@@ -25,7 +26,7 @@ class LinkController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function salvar(Request $req){
+     public function salvar(LinkRequest $req){
        $dados = $req->all();
        Link::create($dados);
        return redirect()->route('links');
