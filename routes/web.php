@@ -27,5 +27,6 @@ Route::group(['middleware' => 'auth'],function(){
   Route::post('/links/salvar',['as'=>'links.salvar','uses'=>'LinkController@salvar']);
   Route::get('/links/deletar/{id}',['as'=>'links.deletar','uses'=>'LinkController@deletar']);
   Route::post('/uteis/salvar',['as'=>'uteis.salvar','uses'=>'UtilController@salvar']);
+  Route::get('/uteis/deletar/{id}',['as'=>'uteis.deletar','uses'=>'UtilController@deletar']);
 
 });

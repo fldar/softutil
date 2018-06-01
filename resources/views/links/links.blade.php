@@ -24,7 +24,7 @@
         <tr>
           <th scope="row">{{$link->site}}</th>
           <td>{{$link->link}}</td>
-          <td>
+          <td class="ir">
             <a href="{{$link->link}}" target="_blank">
     					<button type="button" class="btn btn-primary" aria-label="Left 	Align">
     						<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -96,6 +96,10 @@
         <tr>
           <th scope="col">DESCRIÇÃO</th>
           <th scope="col">CONTEUDO</th>
+          @if(Auth::guest())
+          @else
+          <th scope="col">EXCLUIR</th>
+          @endif
         </tr>
       </thead>
       <tbody>
@@ -103,13 +107,23 @@
         <tr>
           <th scope="row">{{$uteis->descricao}}</th>
           <td>{{$uteis->conteudo}}</td>
+          @if(Auth::guest())
+          @else
+          <td>
+            <a href="{{route('uteis.deletar',$uteis->id) }}">
+              <button type="button" class="btn btn-danger" aria-label="Left 	Align">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+              </button>
+            </a>
+          </td>
+          @endif
         </tr>
         @endforeach
       </tbody>
     </table>
   </div>
 
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center table-link">
     @if(Auth::guest())
     @else
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#util_modal" data-whatever="@mdo">Novo</button>
