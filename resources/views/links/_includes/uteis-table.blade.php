@@ -23,11 +23,9 @@
           @if(Auth::guest())
           @else
           <td>
-            <a href="{{route('uteis.deletar',$uteis->id) }}">
-              <button type="button" class="btn btn-danger" aria-label="Left 	Align">
+              <button type="button" class="btn btn-danger" data-href="{{route('uteis.deletar', $uteis->id)}}" data-toggle="modal" data-target="#deletar-links">
                 <i class="fa fa-trash-o" aria-hidden="true"></i>
               </button>
-            </a>
           </td>
           @endif
         </tr>

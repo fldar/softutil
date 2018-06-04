@@ -24,8 +24,8 @@ class LinkRequest extends FormRequest
     public function rules()
     {
         return [
-            'site' => 'unique:links|required',
-            'link' => 'unique:links|required'
+            'site' => 'unique:links|required|max:700',
+            'link' => 'unique:links|required|max:700'
         ];
     }
 }

@@ -26,16 +26,19 @@ class LinkController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function salvar(LinkRequest $req){
+     public function salvar(LinkRequest $req)
+     {
        $dados = $req->all();
        Link::create($dados);
        return redirect()->route('links');
      }
 
-     public function deletar($id){
-      Link::find($id)->delete();
+     public function deletar($id)
+     {
+      $link = Link::find($id);
+      $link->delete();
       return redirect()->route('links');
-  }
+     }
 
     /**
      * Store a newly created resource in storage.

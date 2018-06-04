@@ -24,11 +24,9 @@
           </a>
           @if(Auth::guest())
           @else
-          <a href="{{route('links.deletar',$link->id) }}">
-            <button type="button" class="btn btn-danger" aria-label="Left 	Align">
-              <i class="fa fa-trash-o" aria-hidden="true"></i>
-            </button>
-          </a>
+          <button type="button" class="btn btn-danger" data-href="{{route('links.deletar', $link->id)}}" data-toggle="modal" data-target="#deletar-links">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </button>
           @endif
         </td>
       </tr>

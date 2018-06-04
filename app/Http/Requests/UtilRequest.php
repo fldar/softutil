@@ -24,8 +24,8 @@ class UtilRequest extends FormRequest
     public function rules()
     {
         return [
-            'descricao' => 'unique:utils|required',
-            'conteudo' => 'unique:utils|required'
+            'descricao' => 'unique:utils|required|max:700',
+            'conteudo' => 'unique:utils|required|max:700'
         ];
     }
 }

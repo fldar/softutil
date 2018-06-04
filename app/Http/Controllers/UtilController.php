@@ -29,10 +29,14 @@ class UtilController extends Controller
         return redirect()->route('links');
       }
 
-      public function deletar($id){
-       Util::find($id)->delete();
-       return redirect()->route('links');
-     }
+      public function deletar($id)
+      {
+        $util = Util::find($id);
+        $util->delete();
+        return redirect()->route('links');
+    //   Util::find($id)->delete();
+    //   return redirect()->route('links');
+      }
     /**
      * Store a newly created resource in storage.
      *

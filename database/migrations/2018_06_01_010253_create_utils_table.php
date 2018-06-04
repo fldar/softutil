@@ -16,7 +16,7 @@ class CreateUtilsTable extends Migration
         Schema::create('utils', function (Blueprint $table) {
             $table->increments('id');
             $table->string('descricao', 255);
-            $table->string('conteudo', 255);
+            $table->string('conteudo', 700);
             $table->timestamps();
         });
     }

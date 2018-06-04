@@ -18,11 +18,11 @@
             {{ csrf_field() }}
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Descrição</label>
-              <input type="text" class="form-control" id="descricao" name="descricao">
+              <input type="text" class="form-control" id="descricao" name="descricao" maxlength="50">
             </div>
             <div class="form-group">
               <label for="message-text" class="col-form-label">Conteudo</label>
-              <input type="text" class="form-control" id="conteudo" name="conteudo">
+              <input type="text" class="form-control" id="conteudo" name="conteudo" maxlength="700">
             </div>
           </form>
         </div>
