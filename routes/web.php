@@ -23,6 +23,11 @@ Route::get('/login/sair',['as'=>'site.login.sair','uses'=>'Site\LoginController@
 Route::get('/links',['as'=>'links','uses'=>'LinkController@index']);
 // ENDLINK =====================
 
+
+// LINK ========================
+Route::post('/informativos/salvar',['as'=>'informativos.salvar','uses'=>'Site\InformativoController@salvar']);
+// ENDLINK =====================
+
 Route::group(['middleware' => 'auth'],function(){
   Route::post('/links/salvar',['as'=>'links.salvar','uses'=>'LinkController@salvar']);
   Route::delete('/links/deletar/{id}',['as'=>'links.deletar','uses'=>'LinkController@deletar']);
