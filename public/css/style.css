@@ -4,7 +4,6 @@
 .table-link th{width: 40px;}
 a:hover{text-decoration: none;}
 .link-right a{float: right;}
-/* LINKS ====================================================================================== */
 
 .btn-ir{
   width: 5%;
@@ -20,7 +19,7 @@ a:hover{text-decoration: none;}
 table thead{
   color: white;
 }
-/* Tables ===================================================================== */
+
 
 
 body {
@@ -32,4 +31,4 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}/* BODY ============================================================================ */
+}
