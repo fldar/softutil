@@ -1,9 +1,5 @@
-﻿.home{margin-top:100px;}
-.table-link th{text-align: center;}
-.table-link td{text-align: center;}
-.table-link th{width: 40px;}
-a:hover{text-decoration: none;}
-.link-right a{float: right;}
+
+
 
 .btn-ir{
   width: 5%;
@@ -32,3 +28,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.link-right a{float: right;}
+﻿.home{margin-top:100px;}
+.table-link th{text-align: center;}
+.table-link td{text-align: center;}
+.table-link th{width: 40px;}
+a:hover{text-decoration: none;}
