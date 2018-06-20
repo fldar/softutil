@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark default-color justify-content-between navbar-expand-lg">
+  <nav class="navbar navbar-dark default-color justify-content-between navbar-expand-lg mdb-color elegant-color">
       <a class="navbar-brand" href="#">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
             </form>
           @else
             <span class="navbar-text white-text">
-                Seja Bem Vindo '{{Auth::user()->name}}'
+                Seja Bem Vindo {{Auth::user()->name}}
             </span>
             <form class="form-inline my-1">
                 <a class="btn btn-outline-white btn-sm my-0" href="{{route('site.login.sair')}}">Logout</a>

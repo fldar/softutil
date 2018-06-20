@@ -9,7 +9,6 @@ use App\Informativo;
 class HomeController extends Controller
 {
   public function index(){
-    $informativos = Informativo::all();
-    return view('home',compact('informativos'));
+    return view('home');
   }
 }
