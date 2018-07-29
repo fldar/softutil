@@ -17,7 +17,6 @@
       </div>
     @endif
 
-
     @include('links._includes.links-table')
 
     @include('links._includes.links-modal')
@@ -28,7 +27,6 @@
 
     @include('links._includes.uteis-modal')
 
+</div><!-- DIV CONTAINER TABLE -->
 
-
-</div>
 @endsection

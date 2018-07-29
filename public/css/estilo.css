@@ -4,7 +4,7 @@
 
 .table-wrapper-2 {
     display: block;
-    max-height: 300px;
+    max-height: 650px;
     overflow-y: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
@@ -13,6 +13,11 @@ table thead{
   color: white;
 }
 
+.input-group.md-form.form-sm.form-1 input{
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
 
 
 body {
@@ -26,7 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.home{margin-top:100px;}
+.home{margin-top:45px;}
 .link-right a{float: right;}
 .table-link th{text-align: center;}
 .table-link td{text-align: center;}
